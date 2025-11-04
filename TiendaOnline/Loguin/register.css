@@ -1,0 +1,77 @@
+/* Importa los estilos del inicio para conservar el diseño general */
+@import url("../Inicio/Inicio.css");
+
+/* Contenedor principal del formulario de registro */
+.register-container {
+  margin-top: 120px;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Título del formulario */
+.register-container h2 {
+  color: #ff4b7b;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* Estructura y diseño del formulario */
+#registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #fff6f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#registerForm input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Botón de registro */
+#registerForm button {
+  background-color: #ff4b7b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#registerForm button:hover {
+  transform: scale(1.05);
+  background-color: #ff295e;
+}
+
+/* Texto y enlaces del registro */
+.register-container p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.register-container a {
+  color: #ff4b7b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}
+
+/* Pie de página al final de la página */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}

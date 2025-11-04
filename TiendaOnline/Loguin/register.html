@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrarse - VECYG Shop</title>
+    <link rel="stylesheet" href="Register.css" />
+  </head>
+  <body>
+    <header>
+      <h1>VECYG Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="../Inicio/Inicio.html">Inicio</a></li>
+          <li><a href="../Productos/Productos.html">Productos</a></li>
+          <li>
+            <a href="../SobreNosotros/SobreNosotros.html">Sobre Nosotros</a>
+          </li>
+        </ul>
+      </nav>
+      <div id="session-container"></div>
+    </header>
+
+    <section class="register-container">
+      <h2>Crear Cuenta</h2>
+      <form id="registerForm">
+        <input type="text" id="nombre" placeholder="Nombre completo" required />
+        <input
+          type="tel"
+          id="telefono"
+          placeholder="Número de teléfono"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="Correo electrónico"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="Contraseña"
+          required
+        />
+        <button type="submit">Registrarse</button>
+      </form>
+      <p>¿Ya tienes cuenta? <a href="Loguin.html">Inicia sesión aquí</a></p>
+    </section>
+
+    <footer>
+      &copy; 2025 VECYG Shop. Todos los derechos reservados.<br />
+      Camilla, Endris, Vallery, Guillermo, Johay
+    </footer>
+
+    <script src="../sesion/nav-sesion.js"></script>
+    <script type="module" src="register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+/* Importa los estilos base para mantener coherencia visual */
+@import url("../Inicio/Inicio.css");
+
+/* Contenedor principal del contenido de la página */
+.nosotros {
+  margin-top: 120px;
+  padding: 40px 60px;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.7;
+}
+
+/* Encabezado con el título y descripción general */
+.empresa-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.empresa-header h2 {
+  color: #ff4b7b;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.empresa-header p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Sección de misión y visión de la empresa */
+.mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+  gap: 40px;
+}
+
+.mision,
+.vision {
+  background-color: #ffe4ec;
+  border-left: 6px solid #ff4b7b;
+  border-radius: 10px;
+  padding: 25px;
+  width: 45%;
+  min-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mision h3,
+.vision h3 {
+  color: #ff4b7b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Lista de valores corporativos */
+.valores {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.valores h3 {
+  color: #ff4b7b;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+}
+
+.valores li {
+  background-color: #fff6f9;
+  border-radius: 8px;
+  margin: 8px auto;
+  padding: 10px 15px;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de historia de la empresa */
+.historia {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.historia h3 {
+  color: #ff4b7b;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.historia p {
+  font-size: 18px;
+  max-width: 850px;
+  margin: 0 auto 25px auto;
+}
+
+.historia img {
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.historia img:hover {
+  transform: scale(1.03);
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .mision-vision {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mision,
+  .vision {
+    width: 90%;
+  }
+
+  .valores li {
+    font-size: 15px;
+  }
+
+  .empresa-header p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciar Sesión - VECYG Shop</title>
+    <link rel="stylesheet" href="Loguin.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>VECYG Shop</h1>
+        <nav>
+          <ul>
+            <li><a href="../Inicio/Inicio.html">Inicio</a></li>
+            <li><a href="../Productos/Productos.html">Productos</a></li>
+            <li>
+              <a href="../SobreNosotros/SobreNosotros.html">Sobre Nosotros</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="session-container"></div>
+      </header>
+
+      <main class="content">
+        <section class="login-container">
+          <h2>Inicia sesión</h2>
+          <form id="loginForm">
+            <input
+              type="email"
+              id="email"
+              placeholder="Correo electrónico"
+              required
+            />
+            <input
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+              required
+            />
+            <button type="submit">Entrar</button>
+          </form>
+          <p>¿No tienes cuenta? <a href="Register.html">Regístrate aquí</a></p>
+        </section>
+      </main>
+
+      <footer>
+        &copy; 2025 VECYG Shop. Todos los derechos reservados.<br />
+        Camilla, Endris, Vallery, Guillermo, Johay
+      </footer>
+    </div>
+
+    <script src="../sesion/nav-sesion.js"></script>
+    <script type="module" src="login.js"></script>
+  </body>
+</html>

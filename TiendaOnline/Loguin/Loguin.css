@@ -1,0 +1,110 @@
+/* Importa los estilos base del inicio para mantener coherencia visual */
+@import url("../Inicio/Inicio.css");
+
+/* Estructura general de la página, asegura que el footer quede abajo */
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Contenedor principal del formulario de inicio de sesión */
+.login-container {
+  margin-top: 120px;
+  text-align: center;
+  padding: 30px 20px 60px;
+}
+
+/* Título del formulario */
+.login-container h2 {
+  color: #ff4b7b;
+  margin-bottom: 20px;
+}
+
+/* Estructura y diseño del formulario */
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+#loginForm input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* Botón de inicio de sesión */
+#loginForm button {
+  background-color: #ff4b7b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#loginForm button:hover {
+  transform: scale(1.03);
+  background-color: #ff295e;
+}
+
+/* Texto y enlaces dentro del formulario */
+.login-container p {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+.login-container a {
+  color: #ff4b7b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* Pie de página fijo al final del contenido */
+footer {
+  background-color: #ff4b7b;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Estilo para enlaces dentro del footer */
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+  .login-container {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  #loginForm {
+    max-width: 90%;
+  }
+}
